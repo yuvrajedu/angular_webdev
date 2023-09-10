@@ -1,0 +1,18 @@
+<div class="user-form">
+    <h2>User Form</h2>
+    <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" formControlName="name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" formControlName="email">
+      </div>
+      <button type="submit" [disabled]="userForm.invalid">Submit</button>
+    </form>
+    <p>
+        {{userFormValue}}
+    </p>
+  </div>
+  
