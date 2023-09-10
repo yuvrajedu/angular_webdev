@@ -1,0 +1,16 @@
+<div class="col-md-12">
+    <div class="mb-3 col-md-6">
+        <label for="" class="form-label">Email</label>
+        <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId"
+            placeholder="abc@mail.com" [(ngModel)]="user.email">
+    </div>
+
+    <div class="mb-3 col-md-6 row">
+        <label for="" class="form-label">Password</label>
+        <input type="password" class="form-control" name="" id=""
+            placeholder="Please enter your pasword" [(ngModel)]="user.pass">
+    </div>
+
+    <button type="submit" class="btn btn-primary" (click)="onSubmit(user.email, user.pass)">Submit</button>
+
+</div>
